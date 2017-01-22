@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="js.js"></script>
-        
-        <title>
-            Js Animation 
-        </title>
-    </head>
-    
-    <body>
-        <div id="container">
-            <div id="box"> <img id="img"  src="http://68.media.tumblr.com/e007ce3f809d3f277a446ef573bdf4a6/tumblr_muqcobYbrE1rmfigjo1_400.gif" alt="Mountain View" > </div>
-       
-        </div> 
-        
-        <nav>
-            <ul>
-                <li><button type="button2" onClick="refreshPage()">Try one more time! :)</button>
-    </li>
-                                <li> <button type="button" onClick="refreshPage()">Change cat</button>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js.js"></script>
+		
+		<title>
+			Js Animation 
+		</title>
+	</head>
+	
+	<body>
+	    
+	   <h2>Cat vs Dog</h2>
+		<div id="container">
+			<div id="box"> <img id="img"  src="cat.gif"> </div>
+					<div id="boxx"> <img id="img"  src="dog.gif"> </div>
+	  
+		</div> 
+	
+		
+<ul>
+  <li><button type="button" onClick="refreshPage()">Try one more time!</button></li>
+  <li><button id="demo" type="button1" onClick="show()">Show speed</button></li>
+  <li><button type="button2" onClick="refreshPage()">Share results</button></li>
+ 
+</ul>
+	   
+	   
+<h3 id="h3"></h3>
    
- </li>
-                                                <li><button type="button" onClick="refreshPage()">Share results</button>
    
-       </li>
-                     </ul>
-            
-        </nav>
-       
-
    
 <script>
 function refreshPage(){
-    window.location.reload();
+	window.location.reload();
 } 
 </script>
-
-    </body>
+<footer>
+	<p>All rights are mine!</p>
+</footer>
+	</body>
+	
 </html>
