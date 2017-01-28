@@ -6,8 +6,8 @@ var pos = 0;
 var pos2 = 0;
 var box = document.getElementById('box');
 var boxx = document.getElementById('boxx');
-var speed= Math.random()*20;
-var speed2= Math.random()*20;
+var speed= Math.random()*10;
+var speed2= Math.random()*10;
 var t = setInterval(move, speed);
 var t2 = setInterval(move2, speed2);
 var size = window.innerWidth || document.body.clientWidth;
@@ -16,18 +16,28 @@ var size = window.innerWidth || document.body.clientWidth;
 var h3 = document.getElementById("h3"),
 h2byName = document.getElementsByTagName("h3"),
 myBody = document.getElementsByTagName("body")[0];
-h2byName[0].innerHTML =  "eee"; 
+
+var h32 = document.getElementById("h32"),
+h32byName = document.getElementsByTagName("h3"),
+my2Body = document.getElementsByTagName("body")[1];
+
+h2byName[0].innerHTML =  "Speed : " + speed; 
+h32byName[1].innerHTML =  "Speed : " + speed2; 
 
 function whoWin(){
 if (speed < speed2)
 {
     alert("Cat win!"); 
 }
+else if (speed == speed2)
+{
+     alert("Draw!"); 
+}
 else
 {
 alert("Dog win!"); 
 }
-};
+}
 
 
 
