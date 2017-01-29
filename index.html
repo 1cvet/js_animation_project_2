@@ -4,62 +4,93 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="js.js"></script>
 		<html lang="en">
+		    
   <meta charset="utf-8">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="w/dist/waves.min.css" />
+  
+  
+  
+    <script type="text/javascript" src="/sweetalert/sweetalert-master/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="/sweetalert/sweetalert-master/dist/sweetalert.css">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/waves/dist/waves.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="w/dist/waves.min.js"></script>
+  <script type="text/javascript" src="/waves/dist/waves.min.js"></script>
 </head>
 		<title>
 			Js Animation 
 		</title>
 	</head>
-	
 	<body>
 	    
-	 
-	    <script> 
-
-function changeImage(idName)
-{
-var img = document.getElementById(idName);
-var gifs = ['1.gif', '2.gif','3.gif','4.gif','5.gif','6.gif','7.gif','8.gif',
-'9.gif','10.gif','11.gif','12.gif'];
-img.src = gifs[Math.floor(Math.random()*gifs.length)];
-return false;
-}
-</script>
-	   <center><h2>Random speed race!</h2></center>
+	    
+	    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+				    
+				     <center><h2>Random winner speed race!</h2></center>
 		<div id="container">
 			<div id="box"> <img id="img"  src="cat.gif"> </div>
 		</div> 
 	<div id="container">
-	    <div id="boxx"> <img id="img2"  src="dog.gif"></div>
+	    <div id="boxx"> <img id="img2"  src="6.gif"></div>
 	    </div>
 
-<div id="menu"><ul>
-  
-  <li><button id="startBtn" class="btn btn-success waves-effect waves-light"onclick="Start();">Start! <span class="glyphicon glyphicon glyphicon-play" aria-hidden="true"></span></button></li>
- <li><button id="clickme" class="btn btn-success waves-effect waves-light" onclick="changeImage('img');">Change 1st character  <span class="glyphicon glyphicon glyphicon-refresh " aria-hidden="true"></span></button></li>
-  <li><button id="clickme" class="btn btn-success waves-effect waves-light"onclick="changeImage('img2');">Change 2nd character   <span class="glyphicon glyphicon glyphicon-refresh" aria-hidden="true"></span></button></li>
-  <li><button type="button2"class="btn btn-success waves-effect waves-light" onClick="refreshPage()">Share results <span class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"></span></button></li>
+<div id="menu">
+    <ul>
+  <li><button style="margin: 5px" id="startBtn" class="btn btn-success"onclick="Start();">Start! <span class="glyphicon glyphicon glyphicon-play" aria-hidden="true"></span></button></li>
+ <li><button  style="margin: 5px" id="clickme" class="btn btn-success" onclick="changeImage('img');">Change 1st character  <span class="glyphicon glyphicon glyphicon-refresh " aria-hidden="true"></span></button></li>
+  <li><button style="margin: 5px" id="clickme" class="btn btn-success"onclick="changeImage('img2');">Change 2nd character   <span class="glyphicon glyphicon glyphicon-refresh" aria-hidden="true"></span></button></li>
+ <!-- <li><button style="margin: 5px" type="button2"class="btn btn-success" onClick="refreshPage()">Share results <span class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"></span></button></li>-->
 </ul>
-	   </div>
+ </div> 
 	   
 <!-- <h3 id="h3"></h3>  <h3 id="h32"></h3> -->
-   
-   
+				    
+				    
+				    
+				    
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	    
+	    
+	    
+	    
+	    
+	    
+  <script>  
+
+function changeImage(idName)
+{
+var img = document.getElementById(idName);
+var gifs = [ '2.gif','3.gif','4.gif','5.gif','6.gif','7.gif','8.gif',
+'10.gif','11.gif','12.gif','cat.gif','dog.gif' ];
+img.src = gifs[Math.floor(Math.random()*gifs.length)];
+return false;
+}
+</script>
+
+	  
+
 <script>
 function refreshPage(){
 	window.location.reload();
 } 
 </script>
-<div id="footer"><footer>
+
+<!--<div id="footer"><footer>
 	<p>footer, 2017</p>
-</footer></div>
+</footer></div> -->
+
 	</body>
 	
 </html>
