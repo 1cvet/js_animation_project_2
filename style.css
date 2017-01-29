@@ -1,10 +1,11 @@
 #container
 {
-    width: 100%;
+    width: 95%;
     height: 200px;
     background: white;
     position: relative;
-  
+   outline: 1px solid #666;
+   margin-left: 20px
 }
 
 #box
@@ -24,22 +25,31 @@
    width: 200px;
     height: 200px; 
 }
+#img2
+{ 
+   width: 200px;
+    height: 200px; 
+}
 button
 {
-   
-   width: 150px;
+    margin: 5px !important;
     height: 50px;  
+}
+
+
+#footer
+{
+   background-color: white;
+   margin-left: 20px;
+ 
 }
 
 #menu
 {
-    margin-top: 20px;
+  margin-left: 20px;
 }
 
-footer
-{
-   background-color: white
-}
+
 
 ul {
     list-style-type: none;

@@ -1,7 +1,11 @@
-window.onload =function ()
-{
-   
+
+function Start (){
     
+    
+var srtBtn= document.getElementById("startBtn");
+srtBtn.disabled=true;
+srtBtn.value="Processing!";
+
 var pos = 0;
 var pos2 = 0;
 var box = document.getElementById('box');
@@ -27,20 +31,22 @@ h32byName[1].innerHTML =  "Speed : " + speed2;
 function whoWin(){
 if (speed < speed2)
 {
-    alert("Cat win!"); 
+       srtBtn.disabled=false;
+    alert("1st runner won!"); 
 }
 else if (speed == speed2)
 {
+   
+  
      alert("Draw!"); 
+    
 }
 else
 {
-alert("Dog win!"); 
+       srtBtn.disabled=false;
+alert("2nd runner won!"); 
 }
 }
-
-
-
 
 function move(){
     if (pos >= size-300 ){
@@ -55,7 +61,6 @@ function move(){
     }
 }
 
-
 function move2(){
     if (pos2 >= size-300 ){
         
@@ -68,10 +73,7 @@ function move2(){
           boxx.style.left = pos2+'px';
     }
 }
-
-
-
-
-
+    
 };
+
 

@@ -3,7 +3,16 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="js.js"></script>
-		
+		<html lang="en">
+  <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="w/dist/waves.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="w/dist/waves.min.js"></script>
+</head>
 		<title>
 			Js Animation 
 		</title>
@@ -11,26 +20,36 @@
 	
 	<body>
 	    
-	   <h2>Cat vs Dog</h2>
+	 
+	    <script> 
+
+function changeImage(idName)
+{
+var img = document.getElementById(idName);
+var gifs = ['1.gif', '2.gif','3.gif','4.gif','5.gif','6.gif','7.gif','8.gif',
+'9.gif','10.gif','11.gif','12.gif'];
+img.src = gifs[Math.floor(Math.random()*gifs.length)];
+return false;
+}
+</script>
+	   <center><h2>Random speed race!</h2></center>
 		<div id="container">
 			<div id="box"> <img id="img"  src="cat.gif"> </div>
-					
-	  
 		</div> 
 	<div id="container">
-	    <div id="boxx"> <img id="img"  src="dog.gif"></div>
+	    <div id="boxx"> <img id="img2"  src="dog.gif"></div>
 	    </div>
 
-<ul>
-  <li><button type="button" onClick="refreshPage()">Try one more time!</button></li>
-  <li><button id="demo" type="button1" onClick="show()">Change characters (not working yet)</button></li>
-  <li><button type="button2" onClick="refreshPage()">Share results (not working yet)</button></li>
- 
+<div id="menu"><ul>
+  
+  <li><button id="startBtn" class="btn btn-success waves-effect waves-light"onclick="Start();">Start! <span class="glyphicon glyphicon glyphicon-play" aria-hidden="true"></span></button></li>
+ <li><button id="clickme" class="btn btn-success waves-effect waves-light" onclick="changeImage('img');">Change 1st character  <span class="glyphicon glyphicon glyphicon-refresh " aria-hidden="true"></span></button></li>
+  <li><button id="clickme" class="btn btn-success waves-effect waves-light"onclick="changeImage('img2');">Change 2nd character   <span class="glyphicon glyphicon glyphicon-refresh" aria-hidden="true"></span></button></li>
+  <li><button type="button2"class="btn btn-success waves-effect waves-light" onClick="refreshPage()">Share results <span class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"></span></button></li>
 </ul>
+	   </div>
 	   
-	   
-<h3 id="h3"></h3>
-<h3 id="h32"></h3>  
+<!-- <h3 id="h3"></h3>  <h3 id="h32"></h3> -->
    
    
 <script>
@@ -38,9 +57,9 @@ function refreshPage(){
 	window.location.reload();
 } 
 </script>
-<footer>
+<div id="footer"><footer>
 	<p>footer, 2017</p>
-</footer>
+</footer></div>
 	</body>
 	
 </html>
